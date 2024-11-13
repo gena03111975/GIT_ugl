@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar3_DZ</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/main.js" defer></script>
+</head>
+
+<body>
+    <h1>Ввод и отображение текста</h1>
+
+    <div class="flex-container">
+        <div class="center">
+            <div>
+                <h2>Ввод текста</h2>
+                <div>
+                    <textarea class="div_left div_left_hover" id="textInput" rows="20" cols="50"
+                        placeholder="Введите текст"></textarea>
+                    <button class="div_right" onclick="updateText()">Сохранить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <h2>Отображение текста</h2>
+            <textarea class="right div_right_hover" id="textDisplay" rows="20" cols="50" readonly
+                placeholder="Вывод текста"></textarea>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="center">
+            <h2>Загрузка изображения</h2>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <div class="center">
+            <h2>Отображение изображения</h2>
+            <div id="imageDisplay"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
